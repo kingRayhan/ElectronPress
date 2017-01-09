@@ -23,22 +23,22 @@
 
 
 /** Register all navigation menus */
-require_once( 'library/navigation.php' );
+require_once( 'inc/navigation.php' );
 
 /** Create widget areas in sidebar and footer */
-require_once( 'library/widget-areas.php' );
+require_once( 'inc/widget-areas.php' );
 
 /** Return entry meta information for posts */
-require_once( 'library/entry-meta.php' );
+require_once( 'inc/entry-meta.php' );
 
 /** Enqueue scripts */
-require_once( 'library/enqueue-scripts.php' );
+require_once( 'inc/enqueue-scripts.php' );
 
 /** Add theme support */
-require_once( 'library/theme-support.php' );
+require_once( 'inc/theme-support.php' );
 
 
 
 /** Configure responsive image sizes */
-require_once( 'library/image-sizes.php' );
+require_once( 'inc/image-sizes.php' );
 
