@@ -37,8 +37,11 @@ require_once( 'inc/enqueue-scripts.php' );
 /** Add theme support */
 require_once( 'inc/theme-support.php' );
 
-
-
 /** Configure responsive image sizes */
 require_once( 'inc/image-sizes.php' );
+
+/** Custom Header */
+require_once( '/inc/custom-header.php' );
+
+
 
