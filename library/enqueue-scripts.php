@@ -40,36 +40,36 @@ if ( ! function_exists( 'ELECTRON_THEME_SLUG_NAME_scripts' ) ) :
 
 	}
 
-/*
+
 	/**
 	 * Load our IE-only stylesheet for all versions of IE:
 	 * <!--[if IE]> ... <![endif]-->
 	 */
-	wp_enqueue_style( 'my-theme-ie', get_stylesheet_directory_uri() . "/css/ie.css" );
-	wp_style_add_data( 'my-theme-ie', 'conditional', 'IE' );
+	//wp_enqueue_style( 'my-theme-ie', get_stylesheet_directory_uri() . "/css/ie.css" );
+	//wp_style_add_data( 'my-theme-ie', 'conditional', 'IE' );
 	/**
 	 * Load our IE version-specific stylesheet:
 	 * <!--[if IE 7]> ... <![endif]-->
 	 */
-	wp_enqueue_style( 'my-theme-ie7', get_stylesheet_directory_uri() . "/css/ie7.css" );
-	wp_style_add_data( 'my-theme-ie7', 'conditional', 'IE 7' );
+	//wp_enqueue_style( 'my-theme-ie7', get_stylesheet_directory_uri() . "/css/ie7.css" );
+	//wp_style_add_data( 'my-theme-ie7', 'conditional', 'IE 7' );
 	/**
 	 * Load our IE specific stylesheet for a range of older versions:
 	 * <!--[if lt IE 9]> ... <![endif]-->
 	 * <!--[if lte IE 8]> ... <![endif]-->
 	 * NOTE: You can use the 'less than' or the 'less than or equal to' syntax here interchangeably.
 	 */
-	wp_enqueue_style( 'my-theme-old-ie', get_stylesheet_directory_uri() . "/css/old-ie.css" );
-	wp_style_add_data( 'my-theme-old-ie', 'conditional', 'lt IE 9' );
+	//wp_enqueue_style( 'my-theme-old-ie', get_stylesheet_directory_uri() . "/css/old-ie.css" );
+	//wp_style_add_data( 'my-theme-old-ie', 'conditional', 'lt IE 9' );
 	/**
 	 * Load our IE specific stylesheet for a range of newer versions:
 	 * <!--[if gt IE 8]> ... <![endif]-->
 	 * <!--[if gte IE 9]> ... <![endif]-->
 	 * NOTE: You can use the 'greater than' or the 'greater than or equal to' syntax here interchangeably.
 	 */
-	wp_enqueue_style( 'my-theme-new-ie', get_stylesheet_directory_uri() . "/css/new-ie.css" );
-	wp_style_add_data( 'my-theme-ie', 'conditional', 'gt IE 8' );
-*/
+	//wp_enqueue_style( 'my-theme-new-ie', get_stylesheet_directory_uri() . "/css/new-ie.css" );
+	//wp_style_add_data( 'my-theme-ie', 'conditional', 'gt IE 8' );
+
 
 
 
