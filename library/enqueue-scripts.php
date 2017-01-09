@@ -13,8 +13,19 @@ if ( ! function_exists( 'ELECTRON_THEME_SLUG_NAME_scripts' ) ) :
 	function ELECTRON_THEME_SLUG_NAME_scripts() {
 
 
-	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/assets/stylesheets/foundation.css', array(), '2.9.0', 'all' );
+	// Load our main stylesheet.
+	wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
+		
+	
+	wp_enqueue_style( 'twentyfifteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfifteen-style' ), '20141010' );
+	wp_style_add_data( 'twentyfifteen-ie', 'conditional', 'lt IE 9' );
 
+	// Load the Internet Explorer 7 specific stylesheet.
+	wp_enqueue_style( 'twentyfifteen-ie7', get_template_directory_uri() . '/css/ie7.css', array( 'twentyfifteen-style' ), '20141010' );
+	wp_style_add_data( 'twentyfifteen-ie7', 'conditional', 'lt IE 8' );
+		
+		
+	
 	// Deregister the jquery version bundled with WordPress.
 	wp_deregister_script( 'jquery' );
 
@@ -28,6 +39,40 @@ if ( ! function_exists( 'ELECTRON_THEME_SLUG_NAME_scripts' ) ) :
 	}
 
 	}
+
+/*
+	/**
+	 * Load our IE-only stylesheet for all versions of IE:
+	 * <!--[if IE]> ... <![endif]-->
+	 */
+	wp_enqueue_style( 'my-theme-ie', get_stylesheet_directory_uri() . "/css/ie.css" );
+	wp_style_add_data( 'my-theme-ie', 'conditional', 'IE' );
+	/**
+	 * Load our IE version-specific stylesheet:
+	 * <!--[if IE 7]> ... <![endif]-->
+	 */
+	wp_enqueue_style( 'my-theme-ie7', get_stylesheet_directory_uri() . "/css/ie7.css" );
+	wp_style_add_data( 'my-theme-ie7', 'conditional', 'IE 7' );
+	/**
+	 * Load our IE specific stylesheet for a range of older versions:
+	 * <!--[if lt IE 9]> ... <![endif]-->
+	 * <!--[if lte IE 8]> ... <![endif]-->
+	 * NOTE: You can use the 'less than' or the 'less than or equal to' syntax here interchangeably.
+	 */
+	wp_enqueue_style( 'my-theme-old-ie', get_stylesheet_directory_uri() . "/css/old-ie.css" );
+	wp_style_add_data( 'my-theme-old-ie', 'conditional', 'lt IE 9' );
+	/**
+	 * Load our IE specific stylesheet for a range of newer versions:
+	 * <!--[if gt IE 8]> ... <![endif]-->
+	 * <!--[if gte IE 9]> ... <![endif]-->
+	 * NOTE: You can use the 'greater than' or the 'greater than or equal to' syntax here interchangeably.
+	 */
+	wp_enqueue_style( 'my-theme-new-ie', get_stylesheet_directory_uri() . "/css/new-ie.css" );
+	wp_style_add_data( 'my-theme-ie', 'conditional', 'gt IE 8' );
+*/
+
+
+
 
 	add_action( 'wp_enqueue_scripts', 'ELECTRON_THEME_SLUG_NAME_scripts' );
 endif;
