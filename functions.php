@@ -43,5 +43,12 @@ require_once( 'inc/image-sizes.php' );
 /** Custom Header */
 require_once( '/inc/custom-header.php' );
 
+/** Custom Background */
+require_once( '/inc/custom-background.php' );
+
+
+/** Libries */
+require_once( '/lib/init.php' );
+
 
 
