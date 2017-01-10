@@ -9,6 +9,7 @@
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
  * @package ElectronPress
+ * @since ElectronPress 1.0.0
  */
 
 /**
