@@ -1,4 +1,14 @@
-   <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+/**
+ * Template part for displaying page content in single.php
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package _s
+ */  
+
+
+
+<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
        <header>
            <h1 class="entry-title"><?php the_title(); ?></h1>
        </header>
