@@ -46,6 +46,10 @@ require_once( '/inc/custom-header.php' );
 /** Custom Background */
 require_once( '/inc/custom-background.php' );
 
+/** Template tags */
+require_once('inc/template-tags.php');
+
+
 
 /** Libries */
 require_once( '/lib/init.php' );
