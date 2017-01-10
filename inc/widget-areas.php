@@ -12,8 +12,8 @@ function ELECTRON_THEME_SLUG_NAME_sidebar_widgets() {
 	  'id' => 'sidebar-widgets',
 	  'name' => __( 'Sidebar widgets', 'ELECTRON_THEME_TEXT_DOMAIN' ),
 	  'description' => __( 'Drag widgets to this sidebar container.', 'ELECTRON_THEME_TEXT_DOMAIN' ),
-	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
-	  'after_widget' => '</article>',
+	  'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	  'after_widget' => '</aside>',
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));
@@ -22,8 +22,8 @@ function ELECTRON_THEME_SLUG_NAME_sidebar_widgets() {
 	  'id' => 'footer-widgets',
 	  'name' => __( 'Footer widgets', 'ELECTRON_THEME_TEXT_DOMAIN' ),
 	  'description' => __( 'Drag widgets to this footer container', 'ELECTRON_THEME_TEXT_DOMAIN' ),
-	  'before_widget' => '<article id="%1$s" class="large-4 columns widget %2$s">',
-	  'after_widget' => '</article>',
+	  'before_widget' => '<aside id="%1$s" class="large-4 columns widget %2$s">',
+	  'after_widget' => '</aside>',
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));
