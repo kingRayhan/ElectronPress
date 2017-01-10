@@ -8,7 +8,7 @@
 
 
 
-<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('main-content content-single') ?> id="post-<?php the_ID(); ?>">
        <header>
            <h1 class="entry-title"><?php the_title(); ?></h1>
        </header>
