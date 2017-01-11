@@ -3,7 +3,7 @@
  * Custom Backgrounds is a theme feature that provides for customization of the background color and image.
  */
 
-function ELECTRON_THEME_SLUG_NAME_custom_header_setup() {
+function ELECTRON_THEME_SLUG_NAME_custom_background_setup() {
 	$defaults = array(
 		'default-color'          => '',
 		'default-image'          => '',
@@ -16,4 +16,4 @@ function ELECTRON_THEME_SLUG_NAME_custom_header_setup() {
 	);
 	add_theme_support( 'custom-background', $defaults );
 }
-add_action( 'after_setup_theme', 'ELECTRON_THEME_SLUG_NAME_custom_header_setup' );
+add_action( 'after_setup_theme', 'ELECTRON_THEME_SLUG_NAME_custom_background_setup' );
