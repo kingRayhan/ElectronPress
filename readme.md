@@ -1,8 +1,6 @@
 # ElectronPress
 
 <br>
-<br>
-<br>
 
 ElectronPress is a very basic starter theme create for quick theme development.
 
