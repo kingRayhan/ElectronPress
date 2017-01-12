@@ -1,9 +1,5 @@
 <?php
 /**
- * Author: KingRayhan
- * URL: http://rayhan.info
- *
- * ElectronPress functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -23,36 +19,36 @@
 
 
 /** Register all navigation menus */
-require_once( 'inc/navigation.php' );
+require_once get_template_directory() . '/inc/navigation.php';
 
 /** Create widget areas in sidebar and footer */
-require_once( 'inc/widget-areas.php' );
+require_once get_template_directory() . '/inc/widget-areas.php';
 
 /** Return entry meta information for posts */
-require_once( 'inc/entry-meta.php' );
+require_once get_template_directory() . '/inc/entry-meta.php';
 
 /** Enqueue scripts */
-require_once( 'inc/enqueue-scripts.php' );
+require_once get_template_directory() . '/inc/enqueue-scripts.php';
 
 /** Add theme support */
-require_once( 'inc/theme-support.php' );
+require_once get_template_directory() .  '/inc/theme-support.php';
 
 /** Configure responsive image sizes */
-require_once( 'inc/image-sizes.php' );
+require_once get_template_directory() . '/inc/image-sizes.php';
 
 /** Custom Header */
-require_once( '/inc/custom-header.php' );
+require_once get_template_directory() . '/inc/custom-header.php';
 
 /** Custom Background */
-require_once( '/inc/custom-background.php' );
+require_once get_template_directory() . '/inc/custom-background.php';
 
 /** Template tags */
-require_once('inc/template-tags.php');
+require_once get_template_directory() . '/inc/template-tags.php';
 
 
 
 /** Libries */
-require_once( '/lib/init.php' );
+require_once get_template_directory() . '/lib/init.php';
 
 
 
